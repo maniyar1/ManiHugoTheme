@@ -8,9 +8,7 @@ h6 {
 }
 
 h1 {
-    font-size: 2em;
-    text-align: center;
-    font-weight: normal;
+    font-size: 2em; text-align: center; font-weight: normal;
 }
 
 h2 {   
@@ -75,6 +73,14 @@ table, th, td {
   padding-top: 1ch;
   border: 1px solid black;
   border-collapse: collapse;
+}
+
+figure {
+margin:0;
+}
+
+figcaption::before {
+    content: "- ";
 }
 
 .subtitle {
