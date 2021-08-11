@@ -83,6 +83,19 @@ figcaption::before {
     content: "- ";
 }
 
+em { 
+    font-style: normal;
+}
+
+em::before { 
+    content: "*";
+}
+
+em::after {
+    content: "*";
+}
+
+
 .subtitle {
     font-size: 1.4rem;
     width: 100%;
