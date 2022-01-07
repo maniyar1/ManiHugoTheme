@@ -5,8 +5,124 @@
     <title> {{.Title}} </title>
     <meta charset="utf-8">
     <meta name="description" content="{{ .Description }}">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="canonical" href="{{ .Permalink }}">
     <link rel="alternate" type="application/rss+xml" title="{{.Site.Title}} RSS feed" href="/index.xml" />
     <link rel=icon href=/favicon.png>
+    <style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: monospace;
+}
+
+h1 {
+    font-size: 2em; text-align: center; font-weight: normal;
+}
+
+h2 {   
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 1em; 
+    font-weight: bold;
+}
+
+body,html {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #fffefc;
+    color: black;
+    min-height: 100vh;
+}
+
+img {
+    max-width:100%;
+    height: auto;
+}
+
+main {
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    margin: 0 auto;
+    padding: 2ch;
+    max-width: 65ch;
+    overflow: hidden;
+}
+
+p, aside {
+    hyphens: auto;
+    font-weight: normal;
+	line-height: 1.5em;
+	margin-top: 2ch;
+}
+
+pre {
+    font-size: 0.8rem;
+    overflow-y: hidden;
+}
+
+footer {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+table, th, td {
+  padding-top: 1ch;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+figure {
+margin:0;
+}
+
+figcaption::before {
+    content: "- ";
+}
+
+.subtitle {
+    font-size: 1.4rem;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#footer-home {
+    font-style: monospace;
+    font-size: 1.4rem;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background: #404040;
+		color: white;
+	}
+	a {
+		color: #b2ddeb;
+	}
+	a:visited {
+		color: #d6d6d6;
+	}
+	h2 {
+		color: #ff8d6d;
+	}
+	code {
+		color: lime;
+	}
+}
+    </style>
 </head>
