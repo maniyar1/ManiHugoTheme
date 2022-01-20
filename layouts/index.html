@@ -2,7 +2,7 @@
     <main>
       {{.Content}}
       <nav>
-        {{ range first 10 .Site.RegularPages }}
+        {{ range first 10  (where .Site.RegularPages ".Params.unlisted" "!=" "true")}}
                 <h2><a href='{{.RelPermalink }}'>{{.Title }}</a></h1>
                 <time datetime='{{dateFormat "2006-01-02T15:04:05Z07:00" .Date}}'> {{dateFormat "Jan 2, 2006" .Date }} </time>
         {{ end }}
