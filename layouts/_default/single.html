@@ -5,11 +5,11 @@
 
     <div class="subtitle">
         <address><a href="mailto:{{.Params.authoremail}}">{{.Params.author}}</a></address>
-        <time datetime='{{dateFormat "2006-01-02T15:04:05Z07:00" .Date}}'> {{dateFormat "Jan 2, 2006" .Date }}</time>
+        <time datetime='{{dateFormat "2006-01-02T15:04:05Z07:00" .Date}}'> {{dateFormat "Jan 2, 2006" .Date }}</time><br>
+        <span aria-label="Estimated read time" id="read-time">{{.ReadingTime}} minutes</span>
     </div>
 
     {{  .Content }}
     </article>
     </main>
-
 {{ end }}
