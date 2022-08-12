@@ -9,12 +9,75 @@
     <link rel="alternate" type="application/rss+xml" title="{{.Site.Title}} RSS feed" href="/index.xml" />
     <link rel=icon href=/favicon.png>
     <style>
+
+@font-face {
+  font-family: "AdelleMono";
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+  src: local("Adelle Mono"),
+       local("AdelleMono"),
+       local("AdelleMono-Regular"),
+       url("/fonts/Adelle Mono/Webfonts/AdelleMono-Regular.woff2");
+       url("/fonts/Adelle Mono/Webfonts/AdelleMono-Regular.woff");
+}
+
+@font-face {
+  font-family: "PeridotLatin";
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+  src: local("Peridot Latin"),
+       local("PeridotLatin"),
+       local("Peridot-Latin"),
+       local("PeridotLatin-Regular"),
+       url("/fonts/Peridot Latin/Webfonts/PeridotLatin-Regular.woff2");
+       url("/fonts/Peridot Latin/Webfonts/PeridotLatin-Regular.woff");
+}
+
+@font-face {
+  font-family: "PeridotLatin";
+  font-display: swap;
+  font-style: normal;
+  font-weight: bold;
+  src: local("Peridot Latin Bold"),
+       local("PeridotLatin-Bold"),
+       local("Peridot-Latin-Bold"),
+       url("/fonts/Peridot Latin/Webfonts/PeridotLatin-Bold.woff2");
+       url("/fonts/Peridot Latin/Webfonts/PeridotLatin-Bold.woff");
+}
+
+@font-face {
+  font-family: "PeridotLatin";
+  font-display: swap;
+  font-style: normal;
+  font-weight: bold;
+  src: local("Peridot Latin SemiBold"),
+       local("PeridotLatin-SemiBold"),
+       local("Peridot-Latin-SemiBold"),
+       url("/fonts/Peridot Latin/Webfonts/PeridotLatin-SemiBold.woff2");
+       url("/fonts/Peridot Latin/Webfonts/PeridotLatin-SemiBold.woff");
+}
+
+@font-face {
+  font-family: "PeridotLatin";
+  font-display: swap;
+  font-style: italic;
+  font-weight: normal;
+  src: local("Peridot Latin Italic"),
+       local("PeridotLatin-Italic"),
+       local("Peridot-Latin-Italic"),
+       url("/fonts/Peridot Latin/Webfonts/PeridotLatin-Italic.woff2");
+       url("/fonts/Peridot Latin/Webfonts/PeridotLatin-Italic.woff");
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 { font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace; /* https://systemfontstack.com/ */
+h6 { 
+    font-family: AdelleMono, Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace; /* https://systemfontstack.com/ */
 }
 
 h1 {
@@ -55,7 +118,8 @@ img {
 }
 
 main {
-    font-family: -apple-system, /*https://bitsofco.de/the-new-system-font-stack/*/
+    font-family: "PeridotLatin", /* Use my font, or fall back to system font */
+                -apple-system, /*https://bitsofco.de/the-new-system-font-stack/*/
                 BlinkMacSystemFont, 
                 "Segoe UI", 
                 Roboto, 
@@ -65,7 +129,7 @@ main {
                 Cantarell, 
                 "Helvetica Neue", 
                 sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     margin: 0 auto;
     padding: 2ch;
     max-width: 32em;
